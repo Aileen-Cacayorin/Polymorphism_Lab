@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D274288521268FDD005B7B33 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274288421268FDD005B7B33 /* main.cpp */; };
+		D274288D21269048005B7B33 /* holding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274288B21269048005B7B33 /* holding.cpp */; };
+		D27428902126959B005B7B33 /* book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274288E2126959B005B7B33 /* book.cpp */; };
+		D274289321269A9E005B7B33 /* recording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274289121269A9E005B7B33 /* recording.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,12 @@
 
 /* Begin PBXFileReference section */
 		D274288121268FDD005B7B33 /* CacayorinAileen-HoldingLab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CacayorinAileen-HoldingLab"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D274288421268FDD005B7B33 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D274288B21269048005B7B33 /* holding.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = holding.cpp; sourceTree = "<group>"; };
+		D274288C21269048005B7B33 /* holding.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = holding.hpp; sourceTree = "<group>"; };
+		D274288E2126959B005B7B33 /* book.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = book.cpp; sourceTree = "<group>"; };
+		D274288F2126959B005B7B33 /* book.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = book.hpp; sourceTree = "<group>"; };
+		D274289121269A9E005B7B33 /* recording.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recording.cpp; sourceTree = "<group>"; };
+		D274289221269A9E005B7B33 /* recording.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = recording.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +64,12 @@
 		D274288321268FDD005B7B33 /* CacayorinAileen-HoldingLab */ = {
 			isa = PBXGroup;
 			children = (
-				D274288421268FDD005B7B33 /* main.cpp */,
+				D274288B21269048005B7B33 /* holding.cpp */,
+				D274288C21269048005B7B33 /* holding.hpp */,
+				D274288E2126959B005B7B33 /* book.cpp */,
+				D274288F2126959B005B7B33 /* book.hpp */,
+				D274289121269A9E005B7B33 /* recording.cpp */,
+				D274289221269A9E005B7B33 /* recording.hpp */,
 			);
 			path = "CacayorinAileen-HoldingLab";
 			sourceTree = "<group>";
@@ -119,7 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D274288521268FDD005B7B33 /* main.cpp in Sources */,
+				D27428902126959B005B7B33 /* book.cpp in Sources */,
+				D274289321269A9E005B7B33 /* recording.cpp in Sources */,
+				D274288D21269048005B7B33 /* holding.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
