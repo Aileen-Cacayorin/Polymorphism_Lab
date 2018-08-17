@@ -10,6 +10,7 @@
 		D274288D21269048005B7B33 /* holding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274288B21269048005B7B33 /* holding.cpp */; };
 		D27428902126959B005B7B33 /* book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274288E2126959B005B7B33 /* book.cpp */; };
 		D274289321269A9E005B7B33 /* recording.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274289121269A9E005B7B33 /* recording.cpp */; };
+		D274289621273F10005B7B33 /* library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D274289421273F10005B7B33 /* library.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		D274288F2126959B005B7B33 /* book.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = book.hpp; sourceTree = "<group>"; };
 		D274289121269A9E005B7B33 /* recording.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recording.cpp; sourceTree = "<group>"; };
 		D274289221269A9E005B7B33 /* recording.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = recording.hpp; sourceTree = "<group>"; };
+		D274289421273F10005B7B33 /* library.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = library.cpp; sourceTree = "<group>"; };
+		D274289521273F10005B7B33 /* library.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = library.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				D274288B21269048005B7B33 /* holding.cpp */,
+				D274289421273F10005B7B33 /* library.cpp */,
+				D274289521273F10005B7B33 /* library.hpp */,
 				D274288C21269048005B7B33 /* holding.hpp */,
 				D274288E2126959B005B7B33 /* book.cpp */,
 				D274288F2126959B005B7B33 /* book.hpp */,
@@ -132,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D27428902126959B005B7B33 /* book.cpp in Sources */,
+				D274289621273F10005B7B33 /* library.cpp in Sources */,
 				D274289321269A9E005B7B33 /* recording.cpp in Sources */,
 				D274288D21269048005B7B33 /* holding.cpp in Sources */,
 			);
