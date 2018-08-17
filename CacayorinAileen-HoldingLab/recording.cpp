@@ -13,6 +13,7 @@
 #include <cstring>
 
 using namespace std;
+extern ofstream csis;
 
 Recording::Recording(const Recording& record) : Holding(record) {
     performer = new char[strlen(record.performer + 1)];
@@ -63,6 +64,7 @@ Recording::Recording(char* r_name, char r_format, char* r_perf, int r_num) : Hol
 
 void Recording::print() {
     cout << "RECORDING: \"" << title << "\" " << performer << " (" << format << ") " << call_number << endl;
+    csis << "RECORDING: \"" << title << "\" " << performer << " (" << format << ") " << call_number << endl;
 }
 
 Recording::~Recording() {

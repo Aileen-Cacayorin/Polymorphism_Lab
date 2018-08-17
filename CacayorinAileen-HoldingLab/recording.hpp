@@ -20,11 +20,10 @@ class Recording : public Holding {
         char* format;
     
     public:
-        Recording(const Recording&);
-        Recording(char*, char, char*, int);
-    
-        virtual ~Recording();
-        virtual void print();
+        Recording(const Recording&);                    // copy constructor
+        Recording(char*, char, char*, int);             // constructor with title, performer, format as char args and int
+        virtual ~Recording();                           // virtual destructor
+        virtual void print();                           // virtual print function
 };
 
 #endif /* recording_hpp */

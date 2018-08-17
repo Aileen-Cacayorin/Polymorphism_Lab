@@ -15,8 +15,6 @@ using namespace std;
 
 extern ofstream csis;
 
-
-
 Book::Book(char* b_title, char* b_auth, int b_num) : Holding(b_title, b_num) {
     author = new char[strlen(b_auth) + 1];
     
@@ -26,14 +24,14 @@ Book::Book(char* b_title, char* b_auth, int b_num) : Holding(b_title, b_num) {
     author[strlen(b_auth)] = '\0';
 }
 
-Book::Book(const Book& book) : Holding(book) //book copy constructor
-{
+Book::Book(const Book& book) : Holding(book) {
     author = new char[strlen(book.author + 1)];
     strcpy(author, book.author);
 }
 
 void Book::print() {
     cout << "BOOK: " << author << " \"" << title << "\" " << call_number << endl;
+    csis << "BOOK: " << author << " \"" << title << "\" " << call_number << endl;
 }
 
 Book::~Book() {

@@ -17,10 +17,10 @@ private:
     char* author;
     
 public:
-    Book(const Book&);
-    Book(char*, char*, int);
-    virtual ~Book();
-    virtual void print();
+    Book(const Book&);                      // copy constructor
+    Book(char*, char*, int);                // constructor with title, author as char args and call number as int arg
+    virtual ~Book();                        // virtual destructor
+    virtual void print();                   // virtual print function
 };
 
 #endif /* book_hpp */

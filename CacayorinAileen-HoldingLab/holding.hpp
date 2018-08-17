@@ -19,10 +19,10 @@ class Holding {
         int call_number;
     
     public:
-        Holding(char*, int);
-        Holding(const Holding&);
-        virtual ~Holding();
-        virtual void print() = 0;
+        Holding(char*, int);                    // construct with char and int arguments
+        Holding(const Holding&);                // copy constructor
+        virtual ~Holding();                     // virtual destructor
+        virtual void print() = 0;               // virtual print function
     
 };
 

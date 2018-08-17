@@ -16,7 +16,6 @@
 #include "recording.hpp"
 
 int main();
-const int SIZE = 256;
-Holding * enterLibHolding();
+Holding * enterLibHolding();  // returns pointer to holding object (record or book pointer)
 
 #endif /* library_hpp */

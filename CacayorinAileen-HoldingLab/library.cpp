@@ -14,28 +14,31 @@
 #include "holding.hpp"
 #include "library.hpp"
 
+const int SIZE = 256;
+
 using namespace std;
 ofstream csis;
 
 int main() {
     
-    Holding *libraryHoldings[5]; //creates 5 array pointers to holding objects
+    Holding *libraryHoldings[5]; //creates arry of 5 pointers to holding objects
     
     csis.open("csis.txt");
     
     cout << "Enter holdings to be stored in a list: " << endl;
+    csis << "Enter holdings to be stored in a list: " << endl;
 
     
     for (int i = 0; i < 5; i++)
     {
-        libraryHoldings[i] = enterLibHolding(); //library function called and returns pointer to array object.
+        libraryHoldings[i] = enterLibHolding(); 
     }
     
     cout << endl << "Here are the holdings: " << endl;
     
     for (int i = 0; i < 5; i++)
     {
-        libraryHoldings [i]->print();   //virtual printing for holding array object.
+        libraryHoldings [i]->print();
     }
     
     csis.close();
@@ -43,7 +46,7 @@ int main() {
     return 0;
 };
 
-Holding *enterLibHolding() { //function that creates a new holding and returns book or recording
+Holding *enterLibHolding() {
     Holding *holdingPtr = nullptr;
     
     char holding_title[SIZE];
@@ -53,14 +56,15 @@ Holding *enterLibHolding() { //function that creates a new holding and returns b
     
 tryagain: //jump to label
     cout << "Enter B for book, R for recording: ";
-    cin >> option;    cin.ignore();
+    cin >> option;
+    cin.ignore();
     csis << "Enter B for book, R for recording: " << option << endl;
     
-    //.................case switch.................//
+    //***    case switch for option     ***//
     switch (option)
     {
         default:
-            cout << "[Error] Invalid option. Try again." << endl;
+            cout << "Invalid option. Try again." << endl;
             goto tryagain;
             break;
             
@@ -110,5 +114,5 @@ tryagain: //jump to label
             break;
     }
     
-    return holdingPtr; //pointer returns as either a book or recording
+    return holdingPtr; 
 };
